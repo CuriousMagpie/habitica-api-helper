@@ -62,7 +62,7 @@
             type: "application/json",
             length: 672,
             contents:
-              '{"type":"deleted","task":{"challenge":{},"group":{"approval":{"required":false,"approved":false,"requested":false},"assignedUsers":[],"sharedCompletion":"singleCompletion"},"completed":false,"collapseChecklist":false,"type":"todo","notes":"","tags":[],"value":[],"priority":1,"attribute":"str","byHabitica":false,"checklist":[],"reminders":[],"createdAt":"","updatedAt":"","_id":"","text":"test","userId":"","id":""},"webhookType":"taskActivity","user":{"_id":""}}',
+              '{"type":"deleted","task":{"challenge":{},"group":{"approval":{"required":false,"approved":false,"requested":false},"assignedUsers":[],"sharedCompletion":"singleCompletion"},"completed":false,"collapseChecklist":false,"type":"todo","notes":"","tags":[],"value":[],"priority":1,"attribute":"","byHabitica":false,"checklist":[],"reminders":[],"createdAt":"","updatedAt":"","_id":"","text":"test","userId":"","id":""},"webhookType":"taskActivity","user":{"_id":""}}',
             name: "postData"
           }
         };
@@ -235,8 +235,8 @@
           var newOptions = {
             Content: "content",
             Party: "groups/party",
-            "User Profile": "user/anonymized",
-            "User Profile 2": "user",
+            "User Profile (anon)": "user/anonymized",
+            "User Profile (non-anon)": "user",
             Tasks: "tasks/user",
             Webhooks: "user/webhook"
           };
